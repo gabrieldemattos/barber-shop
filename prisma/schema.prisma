@@ -18,9 +18,9 @@ model User {
 }
 
 model Barbershop {
-  id          String              @id @default(cuid())
-  email       String
+  id          String              @id @default(uuid())
   name        String
+  address     String
   phones      String[]
   description String
   imageUrl    String
